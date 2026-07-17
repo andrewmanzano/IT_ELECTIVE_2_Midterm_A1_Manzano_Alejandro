@@ -2,7 +2,266 @@
     ViewData["Title"] = "Home Page";
 }
 
+<!-- ==========================================
+     1. HOME SECTION
+     ========================================== -->
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome to my page!</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div class="row align-items-center py-5">
+    <div class="col-md-7">
+        <hr style="border: 2px solid #0d6efd; width: 350px; opacity: 1;" class="mb-4">
+        <h1 class="fw-bold text-dark display-5">Alejandro L. Manzano</h1>
+        <h4 class="text-primary mb-4">Software Developer</h4>
+        <p class="text-secondary fs-5 mb-4">
+            Welcome to my digital space. I specialize in designing, user-friendly layouts and structuring responsive web applications with ASP.NET Core.
+        </p>
+        <div class="d-flex gap-2">
+            <a href="#projects" class="btn btn-primary px-4">View Projects</a>
+            <a href="#contact" class="btn btn-outline-secondary px-4">Contact Me</a>
+        </div>
+    </div>
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+        <!-- Using a reliable source configuration to ensure the circle renders perfectly -->
+        <img src="~/Image/Manzano.png" 
+             class="img-fluid rounded-circle shadow" 
+             style="width: 320px; height: 320px; object-fit: cover; border: 8px solid white;" 
+             alt="Alejandro L. Manzano">
+    </div>
+</div>
+
+<div class="my-5"><hr class="text-muted opacity-25" /></div>
+
+<!-- ==========================================
+     2. ABOUT ME SECTION (Minimum 2 Paragraphs)
+     ========================================== -->
+<section id="about" class="py-5">
+    <!-- Centered Heading Section -->
+    <div class="mb-5 d-flex flex-column align-items-center text-center">
+        <h2 class="fw-bold text-dark">About Me</h2>
+        <!-- Vibrant Indigo to Teal accent bar -->
+        <div class="rounded" style="width: 70px; height: 5px; background: linear-gradient(90deg, #4f46e5, #10b981);"></div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        
+        <!-- Short Biography (Full Deep Indigo Box) -->
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow rounded-4 text-white p-4" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);">
+                <div class="card-body p-2">
+                    <h5 class="fw-bold mb-3 text-warning">
+                        <i class="bi bi-file-person me-2"></i>Short Biography
+                    </h5>
+                    <p class="fs-6 mb-0 lh-base" style="text-align: justify; color: #f0f4ff;">
+                        Hello! My name is Manzano Alejandro L. I am a passionate tech enthusiast who enjoys problem-solving, building functional desktop utilities, and working with backend logic. I have always been fascinated by how software classes and structural logic come together to create desktop solutions that process data efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Educational Background (Full Royal Blue Box) -->
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow rounded-4 text-white p-4" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
+                <div class="card-body p-2">
+                    <h5 class="fw-bold mb-3 text-warning">
+                        <i class="bi bi-mortarboard me-2"></i>Educational Background
+                    </h5>
+                    <p class="fs-6 mb-0 lh-base" style="text-align: justify; color: #f0f4ff;">
+                        I completed my previous academic schooling and graduated from Laguna Northwestern College. Building upon that, I am currently a 3rd-year college student pursuing my bachelor's degree in Information Technology. Across my current subjects, I am studying how to build web portfolios using APIs and classes, while concurrently learning the basics of desktop application development through Visual Basic in another dedicated programming course.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Career Goals (Full Emerald Green Box) -->
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow rounded-4 text-white p-4" style="background: linear-gradient(135deg, #065f46 0%, #10b981 100%);">
+                <div class="card-body p-2">
+                    <h5 class="fw-bold mb-3 text-warning">
+                        <i class="bi bi-briefcase me-2"></i>Career Goals
+                    </h5>
+                    <p class="fs-6 mb-0 lh-base" style="text-align: justify; color: #ecfdf5;">
+                        My primary career goal is to transition from academic logic into industry experience by securing an internship or entry-level position as a Software Developer or Application Programmer. Building on my studies in Visual Basic and class logic, I aim to focus heavily on translating system specifications into clean, interactive, and optimized desktop portfolio structures.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Interests (Full Dark Charcoal/Amber Box) -->
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow rounded-4 text-white p-4" style="background: linear-gradient(135deg, #1e293b 0%, #475569 100%);">
+                <div class="card-body p-2">
+                    <h5 class="fw-bold mb-3" style="color: #fbbf24;">
+                        <i class="bi bi-heart me-2"></i>Personal Interests
+                    </h5>
+                    <p class="fs-6 mb-0 lh-base" style="text-align: justify; color: #f8fafc;">
+                        When I am away from my development environment and school assignments, I enjoy exploring object-oriented programming challenges, learning about software optimization trends, and spending my free time playing computer video games with friends.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="my-5"><hr class="text-muted opacity-25" /></div>
+
+<!-- ==========================================
+     3. SKILLS SECTION (Bootstrap Cards)
+     ========================================== -->
+<section id="skills" class="py-5">
+    <!-- Centered Heading Section -->
+    <div class="mb-4 d-flex flex-column align-items-center text-center">
+        <h2 class="fw-bold text-dark">Skills</h2>
+        <div class="rounded" style="width: 70px; height: 5px; background: linear-gradient(90deg, #4f46e5, #10b981);"></div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Designing -->
+        <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0 shadow-sm text-center p-3 text-white" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);">
+                <div class="card-body">
+                    <div class="mb-2 text-warning"><i class="bi bi-palette fs-3"></i></div>
+                    <h5 class="card-title fw-bold fs-6">Designing</h5>
+                    <p class="card-text small mb-0" style="color: #e0e7ff;">Structuring user-friendly application views and organizing logical dashboard interfaces.</p>
+                </div>
+            </div>
+        </div>
+        <!-- TroubleShooting -->
+        <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0 shadow-sm text-center p-3 text-white" style="background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);">
+                <div class="card-body">
+                    <div class="mb-2 text-warning"><i class="bi bi-bug fs-3"></i></div>
+                    <h5 class="card-title fw-bold fs-6">Troubleshooting</h5>
+                    <p class="card-text small mb-0" style="color: #e0f2fe;">Tracking down syntax bugs, resolving compile-time system errors, and debugging class data flows.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Problem Solving -->
+        <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0 shadow-sm text-center p-3 text-white" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                <div class="card-body">
+                    <div class="mb-2 text-warning"><i class="bi bi-lightning-charge fs-3"></i></div>
+                    <h5 class="card-title fw-bold fs-6">Problem Solving</h5>
+                    <p class="card-text small mb-0" style="color: #ecfdf5;">Breaking down complex programming constraints into manageable, executable algorithms.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Analytical Thinking -->
+        <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0 shadow-sm text-center p-3 text-white" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                <div class="card-body">
+                    <div class="mb-2 text-dark"><i class="bi bi-graph-up-arrow fs-3"></i></div>
+                    <h5 class="card-title fw-bold fs-6">Analytical Thinking</h5>
+                    <p class="card-text small mb-0" style="color: #fef3c7;">Evaluating how independent backend APIs and application classes interact with data source layers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="my-5"><hr class="text-muted opacity-25" /></div>
+
+<!-- ==========================================
+     4. PROJECTS SECTION (Bootstrap Cards)
+     ========================================== -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <div class="mb-5 d-flex flex-column align-items-center text-center">
+            <h2 class="fw-bold text-dark">Projects</h2>
+            <div class="rounded" style="width: 70px; height: 5px; background: linear-gradient(90deg, #4f46e5, #10b981);"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Project 1: Retail Discount System - subtle blue hue -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-primary-subtle">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="~/Image/discounts.png" class="w-100 h-100" style="object-fit: cover;" alt="Retail Discount System screenshot" />
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-primary-emphasis mb-3">Retail Discount System</h5>
+                            <p class="card-text text-secondary small mb-4">A backend database management application constructed to process membership tiers, regular savings logic, and operational markdown parameters efficiently.</p>
+                            <p class="text-muted small"><span class="fw-semibold text-dark">Technologies:</span> Relational Database Design, SQL, Data Logic</p>
+                        </div>
+                        <button class="btn btn-outline-primary w-100 mt-4 rounded-pill">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2: Loan Application System - simple light/white hue -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-light">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="~/Image/Login.png" class="w-100 h-100" style="object-fit: cover;" alt="Loan Application System screenshot" />
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-3">Loan Application System</h5>
+                            <p class="card-text text-secondary small mb-4">A desktop Windows Forms application built with Visual Basic designed to manage student allowance processing, interactive loan requests, and personalized funding balances.</p>
+                            <p class="text-muted small"><span class="fw-semibold text-dark">Technologies:</span> Visual Basic, Windows Forms, UI</p>
+                        </div>
+                        <button class="btn btn-outline-secondary w-100 mt-4 rounded-pill">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3: Parking Slot System - subtle yellow/gold hue -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-warning-subtle">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="~/Image/Parking.png" class="w-100 h-100" style="object-fit: cover;" alt="Parking Slot System screenshot" />
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-warning-emphasis mb-3">Parking Slot System</h5>
+                            <p class="card-text text-secondary small mb-4">A Python-based desktop application utilizing CustomTkinter to automate real-time slot tracking, floor management, entry/exit timestamp logs, and error-free payment calculations.</p>
+                            <p class="text-muted small"><span class="fw-semibold text-dark">Technologies:</span> Python, CustomTkinter, Database, OOP</p>
+                        </div>
+                        <button class="btn btn-outline-warning w-100 mt-4 rounded-pill">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<div class="my-5"><hr class="text-muted opacity-25" /></div>
+
+<!-- ==========================================
+     5. CONTACT SECTION
+     ========================================== -->
+<section id="contact" class="py-5 mb-5">
+    <div class="mb-4 text-center">
+        <h2 class="fw-bold text-dark">Information</h2>
+        <div class="mx-auto bg-primary rounded" style="width: 60px; height: 4px;"></div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="bg-white p-4 p-md-5 rounded border shadow-sm text-center">
+                <!-- Email & Phone details -->
+                <div class="mb-4">
+                    <p class="mb-1 fw-bold text-dark">Email Address:</p>
+                    <p class="text-secondary mb-3">andrewmanzano000@gmail.com</p>
+                    
+                    <p class="mb-1 fw-bold text-dark">Mobile Number:</p>
+                    <p class="text-secondary">09XX XXXX XXX</p>
+                </div>
+
+                <!-- Required Social Profiles -->
+                <div class="d-flex justify-content-center gap-4 fs-4 mb-4">
+                    <a href="https://github.com" target="_blank" class="text-dark"><i class="bi bi-github"></i> GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" class="text-primary"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a href="https://facebook.com" target="_blank" class="text-primary"><i class="bi bi-facebook"></i> Facebook</a>
+                </div>
+
+                <!-- Required Download Resume Button -->
+                <button class="btn btn-dark btn-lg px-4"><i class="bi bi-download me-2"></i> Download Resume</button>
+            </div>
+        </div>
+    </div>
+</section>
