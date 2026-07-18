@@ -1,68 +1,62 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>@ViewData["Title"] - IT_ELECTIVE_2_Midterm_A1</title>
-		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-		<link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
-	</head>
-	<body>
-		<header>
-			<!-- Top Navigation Bar matching your screenshot -->
-			<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-				<div class="container-fluid">
-					<!-- Name Logo on the Left -->
-					<a class="navbar-brand text-uppercase fw-semibold" asp-area="" asp-controller="Home" asp-action="Index">MANZANO</a>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>@ViewData["Title"] - IT_ELECTIVE_2_Midterm_A1</title>
+			<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+			<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+			<link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+		</head>
+		<body>
+			<!-- Main outer flexbox layout container -->
+			<div class="d-flex flex-column flex-md-row min-vh-100">
 
-					<!-- Hamburger Menu Button on the Right -->
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-							aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+				<!-- SIDEBAR / TOP NAVIGATION PANEL -->
+				<header class="bg-white border-end p-3 box-shadow d-flex flex-column" style="min-width: 240px;">
+					<div class="d-flex flex-row flex-md-column justify-content-between align-items-center align-items-md-start w-100">
+						<!-- Name Logo -->
+						<a class="navbar-brand text-uppercase fw-semibold fs-4 mb-0 mb-md-3" asp-area="" asp-controller="Home" asp-action="Index">MANZANO</a>
 
-					<!-- Navigation links (Collapsible on mobile) -->
-					<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-						<ul class="navbar-nav flex-grow-1 justify-content-end gap-2">
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#home">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#about">About Me</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#skills">Skills</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#projects">Projects</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#contact">Contact</a>
-							</li>
-						</ul>
+						<!-- Toggle Button (Only visible on small mobile viewports) -->
+						<button class="navbar-toggler d-md-none border p-2 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 					</div>
-				</div>
-			</nav>
-		</header>
 
-		<!-- Content Container -->
-		<div class="container">
-			<main role="main" class="pb-3">
-				@RenderBody()
-			</main>
-		</div>
+						<!-- Collapsible Sidebar Menu links -->
+						<div class="collapse d-md-flex flex-column flex-grow-1 w-100" id="sidebarMenu">
+							<ul class="nav flex-column gap-2 w-100 mt-3 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link text-dark p-2" asp-controller="Home" asp-action="Index">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark p-2" asp-controller="Home" asp-action="About">About Me</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark p-2" asp-controller="Home" asp-action="Skills">Skills</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark p-2" asp-controller="Home" asp-action="Project">Projects</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark p-2" asp-controller="Home" asp-action="Contact">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</header>
 
-		<!-- Sticky Bottom Footer matching your screenshot -->
-		<footer class="border-top footer text-muted bg-white py-3 mt-auto">
-			<div class="container">
-				© 2026 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+				<!-- MAIN WINDOW/CONTENT AREA -->
+				<main class="flex-grow-1 p-4">
+					@RenderBody()
+				</main>
+
 			</div>
-		</footer>
 
-		<script src="~/lib/jquery/dist/jquery.min.js"></script>
-		<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="~/js/site.js" asp-append-version="true"></script>
-		@await RenderSectionAsync("Scripts", required: false)
-	</body>
-</html>
+			<!-- Script references -->
+			<script src="~/lib/jquery/dist/jquery.min.js"></script>
+			<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+			<script src="~/js/site.js" asp-append-version="true"></script>
+			@await RenderSectionAsync("Scripts", required: false)
+		</body>
+	</html>

@@ -1,0 +1,74 @@
+﻿<div class="container"> 
+    <section id="about" class="py-5">
+        <!-- Centered Heading Section -->
+        <div class="mb-5 d-flex flex-column align-items-center text-center">
+            <h2 class="fw-bold text-dark">About Me</h2>
+            <!-- Vibrant Indigo to Teal accent bar -->
+            <div class="rounded" style="width: 70px; height: 5px; background: linear-gradient(90deg, #4f46e5, #10b981);"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Short Biography (Full Deep Indigo Box) -->
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow rounded-4 text-white p-4" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);">
+                    <div class="card-body p-2">
+                        <h5 class="fw-bold mb-3 text-warning">
+                            <i class="bi bi-file-person me-2"></i>Short Biography
+                        </h5>
+                        <p class="fs-6 mb-0 lh-base" style="text-align: justify; color: #f0f4ff;">
+                            @ViewData["Short Biography"]
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Background (Full Royal Blue Box) -->
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow rounded-4 text-white p-4" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
+                    <div class="card-body p-2">
+                        <h5 class="fw-bold mb-3 text-warning">
+                            <i class="bi bi-mortarboard me-2"></i>Educational Background
+                        </h5>
+                        <p class="fs-6 mb-0 lh-base" style="text-align: justify; color: #f0f4ff;">
+                            @ViewData["Educational Background"] 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Goals (Full Emerald Green Box) -->
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow rounded-4 text-white p-4" style="background: linear-gradient(135deg, #065f46 0%, #10b981 100%);">
+                    <div class="card-body p-2">
+                        <h5 class="fw-bold mb-3 text-warning">
+                            <i class="bi bi-briefcase me-2"></i>Career Goals
+                        </h5>
+                        <p class="fs-6 mb-0 lh-base" style="text-align: justify; color: #ecfdf5;">
+                            @ViewData["Career Goals"]
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Interests (Full Dark Charcoal/Amber Box) -->
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow rounded-4 text-white p-4" style="background: linear-gradient(135deg, #1e293b 0%, #475569 100%);">
+                    <div class="card-body p-2">
+                        <h5 class="fw-bold mb-3" style="color: #fbbf24;">
+                            <i class="bi bi-heart me-2"></i>Personal Interests
+                        </h5>
+                        <p class="fs-6 mb-0 lh-base" style="text-align: justify; color: #f8fafc;">
+                            @ViewData["Personal Interests"]
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="my-5"><hr class="text-muted opacity-25" /></div>
+</div->
+
+
